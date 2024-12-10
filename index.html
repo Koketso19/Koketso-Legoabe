@@ -3,122 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>My Website</title>
+
 </head>
 <body>
 
   <div id="app">
   
-  <section id="header">
-        <a href="#" class="logo">Portfolio.<span>Koketso</span></a>
-        <ul class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </ul>
-    </section>
-  
-  <div class="hero">
-    <h1>KOKETSO</h1>
-    <h2>LEGOABE</h2>
-  
-            <h3>Frontend Developer</h3>
-            <p>Welcome to my Portfolio! I am a passionate web developer with a strong foundation in HTML, CSS, and
-                JavaScript. I love creating dynamic and user-friendly websites.</p>
-            <div class="btn-box">
-                <a href="#projects">View My Work</a>
-                <a href="#contact">Contact Me</a>
-            </div>
-        </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
+    <section id="header">
+          <a href="#" class="logo">Portfolio.<span>Koketso</span></a>
+          <ul class="navbar">
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#education">Education</a>
+              <a href="#contact">Contact</a>
+          </ul>
+      </section>
+      
+   
+    
+    <div class="hero">
+      <h1>KOKETSO</h1>
+      <h2>LEGOABE</h2>
+    
+              <h3>Frontend Developer</h3>
+              <p>Welcome to my Portfolio! I am a passionate web developer with a strong foundation in HTML, CSS, and
+                  JavaScript. I love creating dynamic and user-friendly websites.</p>
+              <div class="btn-box">
+                  <a href="#projects">View My Work</a>
+                  <a href="#contact">Contact Me</a>
+              </div>
+          </div>
+          <div class="home-sci">
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-linkedin'></i></a>
+          </div>
+    </div>
+    <div class="buttons">
+      <button type="button" id="colors-btn">
+        Random colors
+      </button>
+    </div>
+    <canvas id="webgl-canvas"></canvas>
   </div>
-  <div class="buttons">
-    <button type="button" id="colors-btn">
-      Random colors
-    </button>
-  </div>
-  <canvas id="webgl-canvas"></canvas>
-</div>
-
-// Project Section//
- <section id="education" class="education">
-        <h2>Project</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <img alt="Project 3">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">        <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>High School</h3>
-                    <p>Graduated from high school with a strong interest in programming and web development.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                   <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>First Job</h3>
-                    <p>Started my career as a junior developer at [Company Name], focusing on front-end technologies.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                   <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>Online Certification</h3>
-                    <p>Completed several online courses in JavaScript, React, and web development best practices.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-//Education//
-
-<section id="education" class="education">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <img alt="Project 3">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">        <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>High School</h3>
-                    <p>Graduated from high school with a strong interest in programming and web development.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                   <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>First Job</h3>
-                    <p>Started my career as a junior developer at [Company Name], focusing on front-end technologies.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                   <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>Online Certification</h3>
-                    <p>Completed several online courses in JavaScript, React, and web development best practices.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
+   <section id="projects" class="education">
+          <h2>Projects</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                 
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2022</div>
+                  <div class="timeline-content">        <div class="project-info-container">
+               
+        <h3 class="project-title">Project Name</h3>  
+        <span class="project-load-bar" ></span>
+        <p class="project-short-desc">Lorem ipsum dolor sitmet consectetur adipisicing elit</p> 
+        <button class="project-btn"> <a href="#">See More</a> </button>
+      </div>
+                  </div>
+              </div>
+       
+            
+              <div class="timeline-item">
+                  
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2023</div>
+                  <div class="timeline-content">
+                    <div class="project-info-container">
+        <h3 class="project-title">Project Name</h3>  
+        <span class="project-load-bar" ></span>
+        <p class="project-short-desc">Lorem ipsum dolor sitmet consectetur adipisicing elit</p> 
+        <button class="project-btn"> <a href="#">See More</a> </button>
+      </div>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2024</div>
+                  <div class="timeline-content">
+                <div class="project-info-container">
+        <h3 class="project-title">Project Name</h3>  
+        <span class="project-load-bar" ></span>
+        <p class="project-short-desc">Lorem ipsum dolor sitmet consectetur adipisicing elit</p> 
+        <button class="project-btn"> <a href="#">See More</a> </button>
+      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+  
+  <section id="education" class="education">
+          <h2>Education</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <img alt="Project 3">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2022</div>
+                  <div class="timeline-content">        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                      <h3>High School</h3>
+                      <p>Graduated from high school with a strong interest in programming and web development.</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2023</div>
+                  <div class="timeline-content">
+                     <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                      <h3>First Job</h3>
+                      <p>Started my career as a junior developer at [Company Name], focusing on front-end technologies.</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2024</div>
+                  <div class="timeline-content">
+                     <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                      <h3>Online Certification</h3>
+                      <p>Completed several online courses in JavaScript, React, and web development best practices.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+  /* About*/
+  <section id="education" class="education">
+            <article class="about active" data-page="about">
+                  <header>
+                      <h2 class="h2 article-title">About me</h2>
+                  </header>
+  <section class="about" id="about">
+                  <section class="about-text">
+                      <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
+                      <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+                  </section>
+  
+                  <section class="service">
+                      <h3 class="h3 service-title">What I'm doing</h3>
+  
+                      <ul class="service-list">
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                  <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Web Design</h4>
+                                  <p class="service-item-text">I'm a beginner Figma designer, exploring the world of design and learning as I go!</p>
+                              </div>
+                          </li>
+  
+                          <li class="service-item">
+                              <div class="service-icon-box">
+                                  <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                              </div>
+  
+                              <div class="service-content-box">
+                                  <h4 class="h4 service-item-title">Web development</h4>
+                                  <p class="service-item-text">High-quality development of sites at the junior level.</p>
+                              </div>
+                          </li>
+  
+   </section>
+  
 
 </body>
 </html>
