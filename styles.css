@@ -208,7 +208,6 @@ text-shadow: 0 0 25px var(--main-color);
  width: 100%;
 }
 
-
 .education{
 
 
@@ -256,7 +255,7 @@ background: var(--secound-big-color);
   position: absolute;
   width: 5px;
   height: 100%;
-  background-color: var(); /* Assuming var() refers to a color var
+  background-color: var(); /* Assuming var() refers to a color variable */
   left: calc(50% - 2px);
 }
 
