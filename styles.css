@@ -105,12 +105,15 @@ transform: scale(1.1);
 text-shadow: 0 0 25px var(--main-color);
 }
 
+.navbar{
+  margin-right: 400px;
+}
 .navbar a{
- font-size: 1.4rem;
+ font-size: 2rem;
  color: var(--text-color);
  text-decoration: none;
  font-weight: 500;
- margin-left: 4rem;
+ margin-left: 7rem;
  transition: 0.3s ease;
  border-bottom: 3px solid transparent;
 }
@@ -166,6 +169,7 @@ text-shadow: 0 0 25px var(--main-color);
  height: 50px;
  
 }
+
 .btn-box a{
  position: relative;
  display: inline-flex;
@@ -211,12 +215,111 @@ text-shadow: 0 0 25px var(--main-color);
 padding: 100px 5px;
 background: var(--secound-big-color);
 }
+/*project*/
+.project {
+  padding: 100px 5px;
+  background: var(--secound-big-color);
+}
+
+.first-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+  gap: 20px; 
+}
+
+.secound-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+  gap: 20px; /* Adds space between the grid items */
+}
+
+.project h2 {
+  margin-bottom: 5rem;
+  margin-left: 900px;
+  color: var(--main-color);
+}
+
+.timeline-item-project {
+  max-width: 400px;
+  margin: 0 auto; /* Centers the items within the grid cell */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   /* Optional: background for items */
+  border-radius: 10px; /* Optional: rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for separation */
+}
+
+.timeline-item-project::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(); /* Assuming var() refers to a color var
+  left: calc(50% - 2px);
+}
+
+.timeline-date-project {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0 15px;
+}
+
+.timeline-content-project {
+  background-color: var(--big-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content-project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content-project h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.timeline-content-project img {
+  padding: 5px;
+  margin: 5px;
+}
+
+.timeline-content-project p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--big-color);
+  width: 50px;
+}
 
 
- 
-
+ /*education*/
 .education h2{
 margin-bottom: 5rem;
+margin-left: 900px;
+color: var(--main-color);
 }
 
 .timeline-item{
@@ -329,13 +432,14 @@ width: 50px;
 
 .timeline-about{
   display: flex;
-  space-between: 10px;
+  justify-content: space-between;
   margin-left: 400px; 
 }
 .education-about h2{
-   color: white;
-  margin-bottom: 5rem;
-}
+    margin-bottom: 5rem;
+    margin-left: 900px;
+    color: var(--main-color);
+    }
 
 .timeline-content-about {
  
@@ -363,7 +467,7 @@ width: 50px;
   font-weight: 500;
 }
 .timeline-content-about img{
-  pading: 50px;
+  padding: 50px;
   margin: 50px;
 }
 .timeline-content-about p{
